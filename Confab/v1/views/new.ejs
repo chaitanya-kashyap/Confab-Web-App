@@ -1,13 +1,12 @@
 <%- include ('partials/header'); %>
+  <div class="flex-display">
+      <img width="40%" height="40%" src="login.png">
 
-<form class="" action="/sign" method="post">
-  <label for="">Email</label>
-  <input type="text" name="email" value="" placeholder="Email">
-  <label for="">Password</label>
-  <input type="password" name="password" value="" placeholder="Password">
-  <button type="submit" name="button">Submit</button>
-</form>
-
-<a href="/new">Sign Up</a>
+      <form class="form-window" action="/sign" method="post">
+        <input type="text" name="username" class="forms" value="" placeholder="Username">
+        <input type="password" name="password" class="forms" value="" placeholder="Password">
+        <button type="submit" class="login-btn" name="button">Login</button>
+      </form>
+  </div>
 
 <%- include ('partials/footer'); %>
